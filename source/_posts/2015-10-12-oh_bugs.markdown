@@ -1,0 +1,9 @@
+---
+layout: post
+title: 偶遇惊天大Bug
+comments: true
+categories: "Android"
+---
+
+---
+这段时间开始尝试使用okhttp，然而不是很顺利遇到了问题，之前一直吧返回来的Response直接在主线程进行解析response.body.string，就这样一个简单的操作一直折腾了我半天，后来在stackoverflow上面才发现原来，这个东西居然是有网络请求的，卧槽，卧槽，卧槽，重要的事情说三遍~~~
