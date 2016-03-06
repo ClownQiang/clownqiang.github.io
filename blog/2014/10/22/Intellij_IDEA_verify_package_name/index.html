@@ -1,0 +1,383 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Intellij IDEA修改包名 - ClownQiang的日常</title>
+  <meta name="author" content="ClownQiang">
+
+  
+  <meta name="description" content="1.首先将AndroidManifest的Package Name重命名（快捷键shift+F6或者右键Refctor然后Rename）这时Package Name就改变了，但是Src的文件名还没变
+2.如果修改Src文件名， &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://ClownQiang.github.io/blog/2014/10/22/Intellij_IDEA_verify_package_name">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="ClownQiang的日常" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">ClownQiang的日常</a></h1>
+  
+    <h2>代码敲的一般，吉他玩的一般，网球打的一般，但是我高兴，哈哈~~</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:ClownQiang.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Intellij IDEA修改包名</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-10-22T00:00:00+08:00" pubdate data-updated="true"></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><hr />
+
+<p>1.首先将AndroidManifest的Package Name重命名（快捷键shift+F6或者右键Refctor然后Rename）这时Package Name就改变了，但是Src的文件名还没变
+2.如果修改Src文件名，可以用同样的方法修改AndroidManifest中activity的命名。具体过程下面示范：</p>
+
+<h4>修改前</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;manifest xmlns:android="http://schemas.android.com/apk/res/android"
+</span><span class='line'>    package="com.nostra13.universalimageloader.sample"
+</span><span class='line'>    android:versionCode="39"
+</span><span class='line'>    android:versionName="1.9.4" &gt;
+</span><span class='line'>
+</span><span class='line'>...
+</span><span class='line'>    &lt;application
+</span><span class='line'>        android:name=".UILApplication"
+</span><span class='line'>        android:icon="@drawable/ic_launcher"
+</span><span class='line'>        android:label="@string/app_name"
+</span><span class='line'>      android:allowBackup="false"&gt;
+</span><span class='line'>        &lt;activity
+</span><span class='line'>            android:name=".activity.HomeActivity"
+</span><span class='line'>            android:label="@string/app_name" &gt;
+</span><span class='line'>            ...
+</span><span class='line'>        &lt;/activity&gt;
+</span><span class='line'>     &lt;/application&gt;
+</span><span class='line'>&lt;/manifest&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>修改package</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;manifest xmlns:android="http://schemas.android.com/apk/res/android"
+</span><span class='line'>    package="com.clownqiang.test.sample"  //这里修改为
+</span><span class='line'>    android:versionCode="39"
+</span><span class='line'>    android:versionName="1.9.4" &gt;
+</span><span class='line'>
+</span><span class='line'>...
+</span><span class='line'>    &lt;application
+</span><span class='line'>        android:name=".UILApplication"
+</span><span class='line'>        android:icon="@drawable/ic_launcher"
+</span><span class='line'>        android:label="@string/app_name"
+</span><span class='line'>      android:allowBackup="false"&gt;
+</span><span class='line'>        &lt;activity
+</span><span class='line'>            android:name="com.nostra13.universalimageloader.activity.HomeActivity"  //package修改时，src文件名不变，所以这里的.activity.HomeActivity变为绝对路径
+</span><span class='line'>            android:label="@string/app_name" &gt;
+</span><span class='line'>            ...
+</span><span class='line'>        &lt;/activity&gt;
+</span><span class='line'>     &lt;/application&gt;
+</span><span class='line'>&lt;/manifest&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>修改activity的命名，同时修改src</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;manifest xmlns:android="http://schemas.android.com/apk/res/android"
+</span><span class='line'>    package="com.clownqiang.test.sample"  
+</span><span class='line'>    android:versionCode="39"
+</span><span class='line'>    android:versionName="1.9.4" &gt;
+</span><span class='line'>
+</span><span class='line'>...
+</span><span class='line'>    &lt;application
+</span><span class='line'>        android:name=".UILApplication"
+</span><span class='line'>        android:icon="@drawable/ic_launcher"
+</span><span class='line'>        android:label="@string/app_name"
+</span><span class='line'>        android:allowBackup="false"&gt;
+</span><span class='line'>        &lt;activity
+</span><span class='line'>            android:name="com.clownqiang.universalimageloader.activity.HomeActivity"  //这里将光标移至原来的nostra13，然后rename为clownqiang，然后同样方法再修改universalimageloader，最后完成
+</span><span class='line'>            android:label="@string/app_name" &gt;
+</span><span class='line'>            ...
+</span><span class='line'>        &lt;/activity&gt;
+</span><span class='line'>     &lt;/application&gt;
+</span><span class='line'>&lt;/manifest&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;manifest xmlns:android="http://schemas.android.com/apk/res/android"
+</span><span class='line'>    package="com.clownqiang.test.sample"  
+</span><span class='line'>    android:versionCode="39"
+</span><span class='line'>    android:versionName="1.9.4" &gt;
+</span><span class='line'>
+</span><span class='line'>...
+</span><span class='line'>    &lt;application
+</span><span class='line'>        android:name=".UILApplication"
+</span><span class='line'>        android:icon="@drawable/ic_launcher"
+</span><span class='line'>        android:label="@string/app_name"
+</span><span class='line'>        android:allowBackup="false"&gt;
+</span><span class='line'>        &lt;activity
+</span><span class='line'>            android:name=".activity.HomeActivity"  //这里就是 android:name＝"com.clownqiang.test.sample.activity.HomeActivity"
+</span><span class='line'>            android:label="@string/app_name" &gt;
+</span><span class='line'>            ...
+</span><span class='line'>        &lt;/activity&gt;
+</span><span class='line'>     &lt;/application&gt;
+</span><span class='line'>&lt;/manifest&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Ok,完成啦</h3>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">ClownQiang</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-10-22T00:00:00+08:00" pubdate data-updated="true"></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/android/'>Android</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://ClownQiang.github.io/blog/2014/10/22/Intellij_IDEA_verify_package_name/" data-via="" data-counturl="http://ClownQiang.github.io/blog/2014/10/22/Intellij_IDEA_verify_package_name/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/09/23/Android_Share_Umeng/" title="Previous Post: Android第三方平台分享集成挖坑（Umeng篇）">&laquo; Android第三方平台分享集成挖坑（Umeng篇）</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/10/23/come_on_Android_Studio/" title="Next Post: 来吧，Android Studio">来吧，Android Studio &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2016/01/01/zhong_jie/">~2015~</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/10/12/oh_bugs/">偶遇惊天大Bug</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/08/10/actionbar_menu_item_not_show_icon/">ActionBar中Menu隐藏后Item无法显示Icon</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/12/28/he_shu_huan_Num_Two_Animation/">“何书还”之二（关于Animation使用）</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/12/27/he_shu_huan_Num_One/">“何书还”之一（Material Design小试）</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2016 - ClownQiang -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
