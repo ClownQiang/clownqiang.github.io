@@ -1,6 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>http://ClownQiang.github.io/blog/2014/02/22/code_now/</loc>
+        <lastmod>2016-03-06T11:00:07+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://ClownQiang.github.io/blog/2014/05/26/sxsummary/</loc>
+        <lastmod>2016-03-06T11:00:07+08:00</lastmod>
+    </url>
+    <url>
         <loc>http://ClownQiang.github.io/blog/2014/09/10/About_Mac_OS_X_NDK/</loc>
         <lastmod>2016-03-06T09:52:59+08:00</lastmod>
     </url>
@@ -33,24 +41,40 @@
         <lastmod>2016-03-06T09:53:39+08:00</lastmod>
     </url>
     <url>
+        <loc>http://ClownQiang.github.io/blog/2015/06/11/life_gift_preface/</loc>
+        <lastmod>2016-03-06T11:00:07+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://ClownQiang.github.io/blog/2015/07/10/life_gift_one/</loc>
+        <lastmod>2016-03-06T11:00:07+08:00</lastmod>
+    </url>
+    <url>
         <loc>http://ClownQiang.github.io/blog/2015/08/10/actionbar_menu_item_not_show_icon/</loc>
         <lastmod>2016-03-06T09:53:44+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://ClownQiang.github.io/blog/2015/09/10/life_gift_two/</loc>
+        <lastmod>2016-03-06T11:00:07+08:00</lastmod>
     </url>
     <url>
         <loc>http://ClownQiang.github.io/blog/2015/10/12/oh_bugs/</loc>
         <lastmod>2016-03-06T09:53:48+08:00</lastmod>
     </url>
     <url>
+        <loc>http://ClownQiang.github.io/blog/2015/11/16/life_gift_three/</loc>
+        <lastmod>2016-03-06T11:00:07+08:00</lastmod>
+    </url>
+    <url>
         <loc>http://ClownQiang.github.io/blog/2016/01/01/zhong_jie/</loc>
-        <lastmod>2016-03-06T09:54:08+08:00</lastmod>
+        <lastmod>2016-03-06T11:00:07+08:00</lastmod>
     </url>
     <url>
         <loc>http://ClownQiang.github.io/blog/archives/</loc>
-        <lastmod>2016-03-06T09:54:08+08:00</lastmod>
+        <lastmod>2016-03-06T11:00:07+08:00</lastmod>
     </url>
     <url>
         <loc>http://ClownQiang.github.io/</loc>
-        <lastmod>2016-03-06T09:54:08+08:00</lastmod>
+        <lastmod>2016-03-06T11:00:07+08:00</lastmod>
     </url>
     <url>
         <loc>http://ClownQiang.github.io/robots.txt</loc>
