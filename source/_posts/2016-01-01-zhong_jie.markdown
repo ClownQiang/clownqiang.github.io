@@ -2,7 +2,7 @@
 layout: post
 title: ~2015~
 comments: true
-categories: "日常发骚"
+categories: "日常"
 ---
 
 ---
