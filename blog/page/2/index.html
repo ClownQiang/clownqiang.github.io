@@ -1,0 +1,878 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>ClownQiang的日常</title>
+  <meta name="author" content="ClownQiang">
+
+  
+  <meta name="description" content="对于很多写android初次使用的ADT便是eclipse，这货功能十分强大，主要归功于它的各种强大的插件，即使我先后使用了Intellij Idea，Android Studio也没有把eclipse丢掉，因为里面各种插件让我放不下。 使用了一年的Intellij IDEA后， &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://ClownQiang.github.io/blog/page/2">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="ClownQiang的日常" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">ClownQiang的日常</a></h1>
+  
+    <h2>爱Coding，爱吉他，爱生活</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:ClownQiang.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/10/23/come_on_Android_Studio/">来吧，Android Studio</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-10-23T00:00:00+08:00" pubdate data-updated="true"></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><hr />
+
+<p>对于很多写android初次使用的ADT便是eclipse，这货功能十分强大，主要归功于它的各种强大的插件，即使我先后使用了Intellij Idea，Android Studio也没有把eclipse丢掉，因为里面各种插件让我放不下。</p>
+
+<p>使用了一年的Intellij IDEA后，Google发布了新的ADT&mdash;-Android Studio，开始对他完全无爱，使用过Intellij IDEA的都知道，Android Studio就是 IDEA的翻版，但是随着Android Studio的不断完善，配合上强大的Gradle，关于Gradle是什么，可以简单介绍一下。</p>
+
+<h2>Gradle(以下来自<a href="http://www.gradle.org">官网</a>)</h2>
+
+<blockquote><p>Gradle is build automation evolved. Gradle can automate the building, testing, publishing, deployment and more of software packages or other types of projects such as generated static websites, generated documentation or indeed anything else.</p></blockquote>
+
+<p>Gradle是自动化构建工具。Gradle可以自动构建，测试，发布，部署软件包或其他类型的项目，如生成静态网站，生成的文档或实际上任何东西。简单的说有了Gradle你的项目依赖再也不是难题了。</p>
+
+<p>更加详细可以直接戳<a href="http://baike.baidu.com/view/9916271.htm?fr=aladdin">百度百科</a>或者<a href="http://en.wikipedia.org/wiki/Gradle">Wikipedia</a></p>
+
+<h2>为什么使用Android Studio</h2>
+
+<p>众所周知，习惯了一个ADT，如果更改会十分的麻烦，不仅开始效率不高，而且可能换了之后效率还是没有变化。随着我们看见Android Studio的不断更新，我们发现Google是想将其打造成为一个类似XCode的专属ADT。而且里面添加的功能也不再是eclipse的几个插件能够替代的。</p>
+
+<h3>好用XML即时UI展示</h3>
+
+<p>没图我说个QB
+<img src="http://clownqiang.qiniudn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202014-09-13%20%E4%B8%8B%E5%8D%884.09.26.png" alt="XML编辑UI同步展示" />
+看见这个是不是感觉终于解放了，再也不用Tab边写边看UI了。更加省心的是，大家都知道android有多种分辨率，如果要看在其他分辨率的手机上面的显示效果，你只需要在右边更换你需要的手机分辨就可以看到，方便的不是一点点。</p>
+
+<h3>更加方便的新文件创建</h3>
+
+<p><img src="http://clownqiang.qiniudn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202014-09-13%20%E4%B8%8B%E5%8D%884.28.09.png" alt="文件创建的细化" />
+过去在eclipse上面我们只能创建XML，java文件等非常局限，现在在Android Studio可以创建的文件细化到了每个组件，不仅有熟悉的Fragment，Activity，Service还有Google相关服务，是不是很方便，再也不用在eclipse的AndroidManifast中手动添加Activty和Service了</p>
+
+<h3>更加好的性能和使用体验</h3>
+
+<p>过去eclipse经常出现的无响应，莫名的红色小叉号。。。这些都成为历史，现在Android Studio不仅性能比以前更好，不会出现风扇狂转的现象，而且更加稳定。智能的提示也是使用Android Studio的一大优势，非比寻常的提示速度是其他ADT无法达到的。</p>
+
+<h3>插件管理更加方便</h3>
+
+<p><img src="http://clownqiang.qiniudn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202014-09-13%20%E4%B8%8B%E5%8D%884.36.22.png" alt="插件管理" />
+虽然没有eclipse那么多的插件，但是拥有非常方便的插件管理，只需要点一点就可以下载你需要的插件，同时有git和svn，代码的管理也是相当方便。</p>
+
+<h3>新的Google开发集成</h3>
+
+<p>更好以及更快的体验Google新推开发SDK，刚刚推出的Android Wear以及Android TV和新的Android L已经开发尝试，无疑使用官方推出的ADT肯定能更好的尝试这些新东西。</p>
+
+<h2>来吧Android Studio！！！</h2>
+
+<p><a href="https://developer.android.com/sdk/installing/studio.html">Android Studi官方下载</a> 可能下载的速度很慢，原因大家都懂得，具体方法还是百度吧！！！</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/10/22/Intellij_IDEA_verify_package_name/">Intellij IDEA修改包名</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-10-22T00:00:00+08:00" pubdate data-updated="true"></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><hr />
+
+<p>1.首先将AndroidManifest的Package Name重命名（快捷键shift+F6或者右键Refctor然后Rename）这时Package Name就改变了，但是Src的文件名还没变
+2.如果修改Src文件名，可以用同样的方法修改AndroidManifest中activity的命名。具体过程下面示范：</p>
+
+<h4>修改前</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;manifest xmlns:android="http://schemas.android.com/apk/res/android"
+</span><span class='line'>    package="com.nostra13.universalimageloader.sample"
+</span><span class='line'>    android:versionCode="39"
+</span><span class='line'>    android:versionName="1.9.4" &gt;
+</span><span class='line'>
+</span><span class='line'>...
+</span><span class='line'>    &lt;application
+</span><span class='line'>        android:name=".UILApplication"
+</span><span class='line'>        android:icon="@drawable/ic_launcher"
+</span><span class='line'>        android:label="@string/app_name"
+</span><span class='line'>      android:allowBackup="false"&gt;
+</span><span class='line'>        &lt;activity
+</span><span class='line'>            android:name=".activity.HomeActivity"
+</span><span class='line'>            android:label="@string/app_name" &gt;
+</span><span class='line'>            ...
+</span><span class='line'>        &lt;/activity&gt;
+</span><span class='line'>     &lt;/application&gt;
+</span><span class='line'>&lt;/manifest&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>修改package</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;manifest xmlns:android="http://schemas.android.com/apk/res/android"
+</span><span class='line'>    package="com.clownqiang.test.sample"  //这里修改为
+</span><span class='line'>    android:versionCode="39"
+</span><span class='line'>    android:versionName="1.9.4" &gt;
+</span><span class='line'>
+</span><span class='line'>...
+</span><span class='line'>    &lt;application
+</span><span class='line'>        android:name=".UILApplication"
+</span><span class='line'>        android:icon="@drawable/ic_launcher"
+</span><span class='line'>        android:label="@string/app_name"
+</span><span class='line'>      android:allowBackup="false"&gt;
+</span><span class='line'>        &lt;activity
+</span><span class='line'>            android:name="com.nostra13.universalimageloader.activity.HomeActivity"  //package修改时，src文件名不变，所以这里的.activity.HomeActivity变为绝对路径
+</span><span class='line'>            android:label="@string/app_name" &gt;
+</span><span class='line'>            ...
+</span><span class='line'>        &lt;/activity&gt;
+</span><span class='line'>     &lt;/application&gt;
+</span><span class='line'>&lt;/manifest&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>修改activity的命名，同时修改src</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;manifest xmlns:android="http://schemas.android.com/apk/res/android"
+</span><span class='line'>    package="com.clownqiang.test.sample"  
+</span><span class='line'>    android:versionCode="39"
+</span><span class='line'>    android:versionName="1.9.4" &gt;
+</span><span class='line'>
+</span><span class='line'>...
+</span><span class='line'>    &lt;application
+</span><span class='line'>        android:name=".UILApplication"
+</span><span class='line'>        android:icon="@drawable/ic_launcher"
+</span><span class='line'>        android:label="@string/app_name"
+</span><span class='line'>        android:allowBackup="false"&gt;
+</span><span class='line'>        &lt;activity
+</span><span class='line'>            android:name="com.clownqiang.universalimageloader.activity.HomeActivity"  //这里将光标移至原来的nostra13，然后rename为clownqiang，然后同样方法再修改universalimageloader，最后完成
+</span><span class='line'>            android:label="@string/app_name" &gt;
+</span><span class='line'>            ...
+</span><span class='line'>        &lt;/activity&gt;
+</span><span class='line'>     &lt;/application&gt;
+</span><span class='line'>&lt;/manifest&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;manifest xmlns:android="http://schemas.android.com/apk/res/android"
+</span><span class='line'>    package="com.clownqiang.test.sample"  
+</span><span class='line'>    android:versionCode="39"
+</span><span class='line'>    android:versionName="1.9.4" &gt;
+</span><span class='line'>
+</span><span class='line'>...
+</span><span class='line'>    &lt;application
+</span><span class='line'>        android:name=".UILApplication"
+</span><span class='line'>        android:icon="@drawable/ic_launcher"
+</span><span class='line'>        android:label="@string/app_name"
+</span><span class='line'>        android:allowBackup="false"&gt;
+</span><span class='line'>        &lt;activity
+</span><span class='line'>            android:name=".activity.HomeActivity"  //这里就是 android:name＝"com.clownqiang.test.sample.activity.HomeActivity"
+</span><span class='line'>            android:label="@string/app_name" &gt;
+</span><span class='line'>            ...
+</span><span class='line'>        &lt;/activity&gt;
+</span><span class='line'>     &lt;/application&gt;
+</span><span class='line'>&lt;/manifest&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Ok,完成啦</h3>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/09/23/Android_Share_Umeng/">Android第三方平台分享集成挖坑（Umeng篇）</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-09-23T00:00:00+08:00" pubdate data-updated="true"></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><hr />
+
+<p>关于android中的第三方平台接入一直是一个让人又爱又恨的东西，令人应接不暇的各种平台都说自己整合的好，方便，但是着手用了之后，各种问题都来。网上一般看到最多的移动开发者服务平台有友盟，ShareSDK，以及Avos Cloud，这几个平台我都有使用过，都有自己的优缺点，这个就最近使用的Umeng来进行一点坑的挖掘。</p>
+
+<p>关于Umeng，就它的对功能的整合程度，已经算是很不错的了，常见的第三方平台都能看见，具体的怎么使用就不用说了，文档可以直接<a href="http://dev.umeng.com/social/android/share/quick-integration">戳这里</a>。</p>
+
+<h3>下面我主要说一下我遇到的坑</h3>
+
+<h4>1.关于人人网一直显示invalid redirect_ui</h4>
+
+<blockquote><p>如果你是使用的Umeng作为集成SDK，官方说要填写正确的redirect_uri，但是这样问题是无法解决的，这里要将应用的基本信息中的根域名设置为<em> sns.whalecloud.com</em></p></blockquote>
+
+<h4>2.关于QQ空间分享中的网址链接到Umeng</h4>
+
+<blockquote><p>这个是Umeng的默认，这里需要设置 QZoneShareContent的setTargetUrl这里的Url设置为你想跳转的网址即可</p></blockquote>
+
+<h4>3.为什么我的微信分享怎么点都没有反应，既不报错也不出现分享窗口</h4>
+
+<blockquote><p>这个最可能的问题就是你没有设置好微信平台上的包名以及应用签名，好好看一下签名，直接从IDE上面装到手机上与签名打包后的签名是不一样的</p></blockquote>
+
+<h4>4.代码混淆后出错(下面的摘自Umeng的常见问题，也写在这儿)</h4>
+
+<blockquote><p>一般我们使用分享可以看见Umeng提供的混淆代码，但是如果你还使用Umeng提供的其他功能，这些代码就不能完全帮到你了。你可能需要下面的：</p></blockquote>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>-keepclassmembers class * {
+</span><span class='line'>   public &lt;init&gt;(org.json.JSONObject);
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>-keep public class [您的应用包名].R$*{
+</span><span class='line'>    public static final int *;
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>把[您的应用包名] 替换成您自己的包名，如com.yourcompany.example。如果您使用5.0.0及以上版本的SDK，请添加如下命令：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>-keepclassmembers enum * {
+</span><span class='line'>    public static **[] values();
+</span><span class='line'>    public static ** valueOf(java.lang.String);
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>5.腾讯开放平台申请时千万注意申请的是什么</h4>
+
+<blockquote><p>如果是游戏，请注意你的包名，腾讯为了保障自己的利益，包名统一为com.tencent.tmgp.XXXX，如果在你代码写完准备上架，发现包名不对，不仅仅麻烦，而且繁琐的过程十分影响心情。这里如果你的软件都是简单的只想集合QQ分享功能的，建议为软件，这样可以省去很多的事情。</p></blockquote>
+
+<h3>关于修改包名，看Intellij IDEA修改包名</h3>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/09/13/xx_Android_App_Bug/">关于XX网Android客户端开发发现的问题</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-09-13T00:00:00+08:00" pubdate data-updated="true"></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><hr />
+
+<h3>手机拍照上传</h3>
+
+<p>如果在Fragment中调用拍照，直接用startActivityForResult，不要加上getActivity，同时还有在onActivityResult中关于拍照上传要注意使用resultCode，判断取消状态</p>
+
+<h3>关于使用shape花虚线出现实线</h3>
+
+<p>这个问题折腾一段时间，发现这个是一个系统的bug，只要将layer-type设置为software即可</p>
+
+<h3>关于EditText默认不弹出软件</h3>
+
+<p>这里有多种方法，这里说的方法，是EditText不获取到焦点的，有的方法是EditText获取了焦点的但是没有弹出而已。这里说的就是，将EditText的直接父级空间设置：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>android:focusable="true"
+</span><span class='line'>android:focusableInTouchMode="true"</span></code></pre></td></tr></table></div></figure>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/09/10/About_Mac_OS_X_NDK/">关于在Mac OS X使用NDK（入门级）</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-09-10T00:00:00+08:00" pubdate data-updated="true"></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><hr />
+
+<h3>下载Mac OS X版本的NDK</h3>
+
+<p>在android官网NDK页面可以看到相关信息，可以<a href="http://developer.android.com/tools/sdk/ndk/index.html">戳这里</a>，进入这个页面可以看见下载版本分为两个，一个为32-bit，一个为64-bit，到底怎么看，可以再终端输入uname -v，如果出现RELEASE_X86_64，表示为64-bit，如果不清楚，可以<a href="http://www.cnblogs.com/wanyakun/archive/2012/02/24/3403288.html">戳这里</a></p>
+
+<h3>准备JNI</h3>
+
+<ul>
+<li>新建一个AndroidApplication Project，命名为HelloNDK，并在其工程根目录下手动建一个jni目录,在其目录下创建一个Android.mk编译配置文件和hello-ndk.c源文件。</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Android.mk
+</span><span class='line'>
+</span><span class='line'>LOCAL_PATH := $(call my-dir)  
+</span><span class='line'>include $(CLEAR_VARS)  
+</span><span class='line'>LOCAL_MODULE    := hello-ndk  
+</span><span class='line'>LOCAL_SRC_FILES := hello-ndk.c  
+</span><span class='line'>include $(BUILD_SHARED_LIBRARY)  </span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>hello-ndk.c
+</span><span class='line'>
+</span><span class='line'>#include &lt;string.h&gt;  
+</span><span class='line'>#include &lt;jni.h&gt;    
+</span><span class='line'>jstring Java_com_example_HelloNDK_MyActivity_stringFromJNI(JNIEnv* env, jobject thiz)  
+</span><span class='line'>{  
+</span><span class='line'>  return (*env)-&gt;NewStringUTF(env, "Hello from JNI!");  
+</span><span class='line'>} </span></code></pre></td></tr></table></div></figure>
+
+
+<p>在这里jsstring后面Jave_com_example_HelloNDK（这个是包名），stringFromJNI是方法名</p>
+
+<ul>
+<li>编译文件将下载NDK包解压到指定位置，将路径加入到.bash_profile（或者使用zsh为.zshrc），到project的jni目录下，使用命令ndk-build，如果成功会出现以下文字</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>[armeabi] Compile thumb  : hello-ndk &lt;= hello-ndk.c
+</span><span class='line'>[armeabi] SharedLibrary  : libhello-ndk.so
+</span><span class='line'>[armeabi] Install        : libhello-ndk.so =&gt; libs/armeabi/libhello-ndk.so</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>在java文件中引用JNI</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>MyActivity.java
+</span><span class='line'>
+</span><span class='line'>package com.example.HelloNDK;//包名
+</span><span class='line'>
+</span><span class='line'>import android.app.Activity;
+</span><span class='line'>import android.os.Bundle;
+</span><span class='line'>import android.widget.TextView;
+</span><span class='line'>
+</span><span class='line'>public class MyActivity extends Activity {
+</span><span class='line'>  /**
+</span><span class='line'>  * Called when the activity is first created.
+</span><span class='line'>  */
+</span><span class='line'>  @Override
+</span><span class='line'>      public void onCreate(Bundle savedInstanceState) {
+</span><span class='line'>          super.onCreate(savedInstanceState);
+</span><span class='line'>
+</span><span class='line'>      TextView textView = new TextView(this);
+</span><span class='line'>      textView.setText(stringFromJNI());
+</span><span class='line'>      setContentView(textView);
+</span><span class='line'>  }
+</span><span class='line'>
+</span><span class='line'>  public native String stringFromJNI();
+</span><span class='line'>  public native String unimplementedStringFromJNI();
+</span><span class='line'>
+</span><span class='line'>  static {
+</span><span class='line'>      System.loadLibrary("hello-ndk");
+</span><span class='line'>  }
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>注意：Java代码中使用native关键字标示方法是JNI库中的函数，虽然上一步编译出来的JNI库的名字是libhello-ndk.so，但是按照规范，System.loadLibrary中的参数是去掉lib和.so的。</p>
+
+<h2>如果运行程序出现Hello from JNI!表示成功了，骚年！！！</h2>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/05/26/sxsummary/">关于某外包开发心得</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-05-26T00:00:00+08:00" pubdate data-updated="true"></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>前段时间开发了人生的第一个外包App，相对平时做的一些App，有了一定的压力，而且有了更高的要求，不仅仅要有功能上的实现，而且有了更多其他的要求，比如手机的适配，包工头改不完的要求，以及无良android商家对android的修改，比如某米，简直无力吐槽。最后统计java代码量达到了9991行，虽然java比较繁琐，而且我们技术有限，接口以及代码复用做的不太好，但是对于我们还是一个比较大的项目，然而关于这样一个项目是怎么样生成的，希望能给到大家一点启示。</p>
+
+<h3>项目功能的初步建模</h3>
+
+<p>一个比较大的项目，不管是外包，还是自己想做的，都会有一个大概的功能框架，虽然说做出模型图片，不是程序员的任务，但是通过这次项目，我深深的认识到，一个android的原型图，至少应该派一个程序员与美工(UI设计师~)进行交流，不然他们设计出来的菜单等级，以及酷炫的风格会让你蛋疼无比，然后还会丢下一句“说这么多干什么，不就是做不出来吗？”，为了你的代码难度在你的一定掌握范围内，所以一个靠谱的任必须去和美工一起定原型图，这个非常重要，因为android是没有做到绝对的界面与代码分离，而且基本上美工不懂android布局，所以他们完全不能认识到设计出来的布局到底有多大的难度，这是我遇到的第一个坑。。。</p>
+
+<h3>项目功能的考究</h3>
+
+<p>终于解决了基本模型的问题，接下来就是功能，无论你是做什么样的软件，功能是离不开的，举个例子，“掌上南邮”我虽然没有参与做，但是看到这个软件，大家都会知道功能有哪些，比如进入界面有个天气预报，用了webservice，接下来的图书馆，用了android中http传输信息然后jsoup爬取图书馆信息，等等。对这些功能做了基本分析，可以将这些技术点分个类，较简单，难，很难，这样你的侧重点，当然还有开发中可能遇到的坑，不要小瞧这一点，一个坑可以让你白忙活一天，还有太难的地方必须有一定的规划，不然就不只是浪费时间了。</p>
+
+<h3>项目页面分配</h3>
+
+<p>这个也是一个问题，现在做android应用，人多会有，项目结合以及理解性的偏差，所以我的建议是，“能一个人做的不要两个人”，这个真的是很重要，人多力量大主要体现在搬砖，在这里人越少你的代码的统一性更能体现，而且很多的地方都在你的控制范围内，比如数据方法封装。。。但是要两个人或者更多了，这个时候 <a href="https://www.github.com">github</a>, <a href="https://trello.com">trello</a>等作为团队合作的神器就来了，更重要的是分配任务时要注意尽量将粘合度比较低的界面分离出去。关于工具类以及接口的整合，我觉得可以先几个人用自己的类写，然后重构时再合到一起，或者还可以让一个比较靠谱的人去写工具类，注意要比较靠谱，因为他的速度要能跟上其他人的速度，为他们提供方法和接口。</p>
+
+<h3>项目工程的建立</h3>
+
+<p>大家终于要告别一个com.example.Hello写完全部类的时代了，一个好的工程目录可以清晰的看出这个项目的结构，一般不要以com.example中的example因为你提交你的android app到应用市场，他会读出你的包名，如果是example有的是不会接受的。</p>
+
+<p>举个项目目录例子：</p>
+
+<pre><code>org.clownxiaoqiang.test
+├── adapter
+├── util    
+├── widget
+├── model     
+└── ui
+    ├── flash
+    ├── home     
+    ├── shop
+    ├── me
+    └── more
+</code></pre>
+
+<p>大家看到的这个例子，分了很多的目录其实还不算标准，在ui下面有了很多，这个就是我们看到的各种界面，一个大的集合为一个，这样不同人在开发时就不会干扰，而且很有序，其实一开始工作做好了，后面的代码重构会简单很多，这里有一个个人开发的 <a href="https://github.com/gonjay/rubychina4android">rubychina4android</a>android app，大家可以看下他的工程目录，学习一下。</p>
+
+<h3>后记</h3>
+
+<p>一个好的写代码习惯也是非常重要的，比如命名，减少冗余代码等，不要小瞧任何一点，同时不要受身边的人干扰，不要认为写android就会低端很短，如果你能在这条路上做到极致，你也是牛X的，如果再有人对你炫耀他是做底层的，你就把手机丢他脸上，让他自己写app装上去。还有，一个靠谱的包工头，简直太TM重要了</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/02/22/code_now/">马上码代码</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-02-22T00:00:00+08:00" pubdate data-updated="true"></time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h3><a href="https://github.com/1019439568">ClownQiang</a>—————一只屌丝程序员</h3>
+
+<hr />
+
+<p>第一次为俱乐部写一篇博客，关于技术上面确实懂得太少，说的太多可能会使大家误入歧途，不过 <a href="https://github.com/oa414">oa414</a>将这个任务交给了我，我还是得认真完成。下面就我来移动MM俱乐部的半年里的感受与体会与大家讲讲，对于我这种低端水平的人怎么去写一个android应用。</p>
+
+<p>刚进俱乐部，就碰上了google大学生开发大赛，这个对于我来说是比较正式的参加校外比赛，虽然技术不怎么样，但是屌丝都有一个高富帅的心，同为屌丝的涛哥和我一起组成了一队。刚好那时看到一个计时类应用，是利用手指的滑动进行时间的记入，很有创意。所以就萌生了开发TimeNote的想法，但是开发的决定过程是很漫长，因为不知道手指滑动记入时间到底怎么实现的，我们陷入一种怪圈子：</p>
+
+<p>他说：“小强，这个太复杂了，感觉实现有点困难，要不我们换成其他计时。”</p>
+
+<p>我说：“我们的这个应用的新意就在这儿。。”</p>
+
+<p>他说：“怎么实现”</p>
+
+<p>我说：“balabalabala。。。”</p>
+
+<p>他说：“balabalabala。。。” 。。。。</p>
+
+<p>然后还是没有结果，同样的现象还发生在后来校科技节中的android开发比赛，为了开发一些比较具有玩乐价值的应用，当时有这样两个选择： <a href="http://as.baidu.com/a/item?docid=5078477">真心话大冒险</a>与谁是卧底, 因为真心话大冒险是我与学姐胡雪茜开发的，所以就以这个为例子。按照惯例，开发之前又是一阵头脑风暴，在学姐“美好”的畅想中，我们的应用 <a href="http://as.baidu.com/a/item?docid=5078477">真心话大冒险</a>具有了很多炫的功能，不仅有微信摇一摇功能，还有酷比的阴影旋转效果，但是对于我这种战5水平完全无法实现，“摇一摇”勉强可以实现，但是阴影对于我来说就太什么了点，为了有个好的规划，又开始了激烈的讨论，一个晚上过去了，她的UI界面没出来，我的 <a href="http://zh.wikipedia.org/wiki/GitHub">github</a>仓库都没建立。</p>
+
+<p>上面举了两个例子无非是想告诉大家，说的再多也抵不过动手去做，规划固然重要，但是如果拿着规划的幌子去正大光明的浪费时间就只能”呵呵“了。当你要去开发一个软件时，能做的事情很多，而不是用嘴巴去写代码，如果你还是那个开口就是要开发 <a href="http://zh.wikipedia.org/wiki/%E5%A4%A7%E5%9E%8B%E5%A4%9A%E4%BA%BA%E5%9C%A8%E7%BA%BF%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94%E6%B8%B8%E6%88%8F">MMORPG</a>，或者开发Whatsapp大赚190亿美元，但是又不怎么去做实际事情，那我必须再打击一下你。</p>
+
+<p>记得临近期末曾经有个人来找过我们，他有个十分新颖的想法，是关于XX的改良版，“balabalabala”说了一大堆后，说自己基本“万事具备，只欠软件”，听完了oa414“呵呵“一笑，表示”too young，young simple“，在中国这个十几亿的大国，这样或者那样想法每天都不缺，所以如果想以一个想法达到那样的高度是不太合适的。如果你是一个程序员，就应该认真的去看看计算机方面的书;如果你是一个UI设计师，那么就学会用各种可视化布局工具，如： <a href="http://www.bootcss.com/p/layoutit/">LayoutIt</a>， <a href="http://www.bootcss.com/p/bootstrap-wysiwyg/">bootstrap-wysiwyg</a>等等，而不是会做几张图片就谈什么深入群众，“步子太大，小心扯淡”。</p>
+
+<p>今天说的东西不多，作为开学的Blog我表示责任重大，所以在新的学期不要用调戏妹子的言语勾搭计算机，它不吃这一套，所以在你真的想学的时候多去干点实实在在的事情，让自己充实。</p>
+
+<p>哪些想学游戏的，马上看看游戏方面的书，以及自己动手开发小的游戏。。。。。。。</p>
+
+<p>哪些想学IOS的，马上找找翔宇“学长”。。。。。。。</p>
+
+<p>哪些想学UI，马上储备能用实际技能，注意你不是PS怪。。。。。。。。。。。</p>
+
+<p>哪些正在扯淡的，马上码代码吧。。。。。。。。。</p>
+
+<h3>最后附上各种程序在Github上的链接：</h3>
+
+<ul>
+<li><a href="https://github.com/1019439568/TimeNote">TimeNote</a></li>
+<li><a href="https://github.com/1019439568/Truth-or-Dare">真心话大冒险</a></li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2016/01/01/zhong_jie/">~2015~</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/11/16/life_gift_three/">生活的馈赠（三）</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/10/12/oh_bugs/">偶遇惊天大Bug</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/09/10/life_gift_two/">生活的馈赠（二）</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/08/10/actionbar_menu_item_not_show_icon/">ActionBar中Menu隐藏后Item无法显示Icon</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2016 - ClownQiang -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
